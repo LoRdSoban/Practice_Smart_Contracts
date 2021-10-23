@@ -37,9 +37,20 @@
 )
 
 
-
 (define-read-only (get_english_marks (name (string-ascii 20))) 
 
 (get english (unwrap! (map-get? stu_data {name: name}) MARKS_NOT_EXISTS))
+
+)
+
+(define-read-only (get_maths_marks (name (string-ascii 20))) 
+
+(get maths (unwrap! (map-get? stu_data {name: name}) MARKS_NOT_EXISTS))
+
+)
+
+(define-read-only (get_science_marks (name (string-ascii 20))) 
+
+(get science (unwrap! (map-get? stu_data {name: name}) MARKS_NOT_EXISTS))
 
 )
