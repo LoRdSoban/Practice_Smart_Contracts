@@ -1,0 +1,11 @@
+[project]
+name = "TEST"
+requirements = []
+costs_version = 1
+[contracts.firstContract]
+path = "contracts/firstContract.clar"
+depends_on = []
+
+[contracts.stu_marks]
+path = "contracts/stu_marks.clar"
+depends_on = []
